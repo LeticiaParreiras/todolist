@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+*{
+    font-family: "Short Stack", serif;
+    background-color: #e5e2db;
+    background-image: url("img/grid.png");
+    background-attachment: fixed;
+  
+}
+
+main{
+    padding: 10px;
+    max-width: 500px;
+    min-width: 500px;
+    margin: auto;
+   margin-bottom: 100px;
+ 
+}
+
+h1{
+ 
+    font-size: 3em;
+    background-color: none;
+}
+p{
+   
+    font-size: 1.5em;
+    line-height:1em;
+
+}
+
+#text{
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    border: 1px solid black;
+}
+#add{
+    width: 10%;
+    border-radius: 10px;
+    background: #f1f1f1;
+    font-weight: 700;
+    border: 1px solid black;
+}
+.input{
+    margin-top: 200px;
+    display: flex;
+    
+}
+#list{
+    
+    margin-bottom: 30px;
+}
+
+ ul li{
+    list-style: none;
+    font-size: 2em;
+    line-height:40px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+li.check  {
+    text-decoration: line-through;
+}
+/* Caixa para o marcador */
+input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    /* Tamanho */
+    width: 20px;
+    height: 20px;
+    /* Cor do fundo e borda */
+    background-color: #fff;
+    border: 0.125rem solid #000000;
+    border-radius: 0.25rem;
+    margin-right: 10px;
+  }
+  
+  /* Características do marcador */
+  input[type="checkbox"]::before {
+    content: "";
+    /* Posicionar no meio */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Tamanho do marcador */
+    width: 0.75rem;
+    height: 0.75rem;
+    /* Formato do marcador */
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    /* Posicionar no meio */
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: center;
+    transition: 0.125s transform ease-in-out;
+    /* Cor do marcador */
+    box-shadow: inset 1rem 1rem #000000;
+  }
+  
+  /* Cor da caixa para o marcador */
+  input[type="checkbox"]:checked {
+    background-color: #000000;
+    border-color: #000000;
+  }
+  
+  /* Características do marcador quando selecionado */
+  input[type="checkbox"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  /* Características do marcador quando selecionado */
+  
+  
+  input[type="checkbox"]:focus {
+    border-color: #000000;
+  }
+  
+
+ul li span{
+    position: absolute;
+    
+    right: 0;
+    text-align: center;
+}
+ul li span:hover{
+    color: #00000098;
+}
+footer{
+    font-size: 0.5em;
+    text-align: center;
+    position: sticky;
+}
+@media screen and (max-width: 730px) {
+    #text{
+        width: 80%;
+        
+    }
+    #add{
+        width: 20%;
+        
+    }
+    
+}
