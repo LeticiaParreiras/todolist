@@ -39,10 +39,17 @@ list.addEventListener("change", function (e) {
 
 list.addEventListener("click", function(e) {
      if (e.target.tagName === "SPAN") {
+        if(window.confirm("Certeza que deletar tarefa?")){
         e.target.parentElement.remove(); // Remove o item pai (<li>) ao clicar no <span>
-        savedata()
+        savedata()}
     }
 },false);
+function deleteall(){
+    if(window.confirm("Certeza que deletar tarefa?")){
+        list.innerHTML=""
+    }
+    savedata()
+}
 function savedata(){
     localStorage.setItem("data",list.innerHTML)
 }

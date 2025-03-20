@@ -36,20 +36,23 @@ p{
     background: #f1f1f1;
     border: 1px solid black;
 }
-#add{
-    width: 10%;
+input[type="button"]{
+
+    padding: 5px;
     border-radius: 10px;
     background: #f1f1f1;
     font-weight: 700;
     border: 1px solid black;
 }
-.input{
-    margin-top: 200px;
+input[type="button"]:hover{
+    opacity: 85%;
+}
+#deleteall{
+    margin: 5px;
     display: flex;
-    
+    justify-content: center;
 }
 #list{
-    
     margin-bottom: 30px;
 }
 
@@ -130,15 +133,4 @@ footer{
     font-size: 0.5em;
     text-align: center;
     position: sticky;
-}
-@media screen and (max-width: 730px) {
-    #text{
-        width: 80%;
-        
-    }
-    #add{
-        width: 20%;
-        
-    }
-    
 }
